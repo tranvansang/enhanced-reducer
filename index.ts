@@ -16,7 +16,10 @@ const useEnhancedReducer = <R extends Reducer<any, any>>(
 ) => {
 	const lastState = useRef(initState)
 	const getState = useCallback(() => lastState.current, [])
-	const enhancedReducer = useRef((state, action) => lastState.current = reducer(
+	const enhancedReducer = useRef((
+		state: ReducerState<R>,
+		action: ReducerAction<R>
+	) => lastState.current = reducer(
 		state,
 		action
 	)).current // to prevent reducer called twice, per: https://github.com/facebook/react/issues/16295
