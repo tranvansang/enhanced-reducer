@@ -3,7 +3,7 @@ import {Reducer, ReducerAction, ReducerState, useCallback, useMemo, useReducer, 
 export const useEnhancedReducer = <R extends Reducer<any, any>>(
 	reducer: R,
 	initState: ReducerState<R>,
-	initializer: Parameters<typeof useReducer>[2],
+	initializer?: Parameters<typeof useReducer>[2],
 	middlewares: Array<(
 		state: ReducerState<R>
 	) => (
