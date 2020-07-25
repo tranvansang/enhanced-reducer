@@ -1,0 +1,21 @@
+{
+  "name": "enhanced-reducer",
+  "version": "0.0.1",
+  "description": "Enhanced version of useReducer which supports middlewares and static getState callback",
+  "main": "index.js",
+  "repository": "https://github.com/tranvansang/enhanced-reducer",
+  "author": "Tran Sang",
+  "license": "MIT",
+  "private": false,
+  "files": ["index.js"],
+  "scripts": {
+    "build": "yarn tsc --jsx react --skipLibCheck --declaration index.ts"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.43",
+    "typescript": "^3.9.7"
+  }
+}
