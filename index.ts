@@ -1,6 +1,6 @@
 import {Reducer, ReducerAction, ReducerState, useCallback, useMemo, useReducer, useRef} from 'react'
 
-const useEnhancedReducer = <R extends Reducer<any, any>>(
+export const useEnhancedReducer = <R extends Reducer<any, any>>(
 	reducer: R,
 	initState: ReducerState<R>,
 	initializer: Parameters<typeof useReducer>[2],

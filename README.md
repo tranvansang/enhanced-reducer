@@ -5,7 +5,7 @@ An enhanced version of react's `useReducer` which supports middleware and static
 
 # API
 
-`useEnhancedReducer`
+`export const useEnhancedReducer`
 
 - Parameters `(reducer, initState, initializer, middlewares = [])`
 - Return `[state, dispatch, getState]`
