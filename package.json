@@ -1,6 +1,6 @@
 {
   "name": "enhanced-reducer",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Enhanced version of useReducer which supports middlewares and static getState callback",
   "main": "index.js",
   "repository": "https://github.com/tranvansang/enhanced-reducer",
